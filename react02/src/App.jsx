@@ -6,18 +6,21 @@ function App() {
   let [counter, setCounter] = useState(0);
 
   function incrementCounter() {
-    if(counter <= 20){
+  
     console.log("you clicked me", counter);
-    counter = counter + 1;
-    setCounter(counter);
-     }
+    // counter = counter + 1;
+    setCounter((prevCounter)=>prevCounter + 1);
+     setCounter((prevCounter)=>prevCounter + 1);
+      setCounter((prevCounter)=>prevCounter + 1);
+       setCounter((prevCounter)=>prevCounter + 1);
+   
   }
 
   function decrementCounter(){
-    if(counter > 0){
+  
     counter = counter - 1;
     setCounter(counter)
-    }
+    
   }
 
   return (
